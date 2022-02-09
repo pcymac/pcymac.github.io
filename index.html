@@ -1,59 +1,87 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index,follow">
-    <link rel="canonical" href="https://pcymac.com/" >
-    <title>PCYMAC | Reparación de Computadoras</title>
-    <meta name="description" content="PCYMAC es una empresa de Monterrey, N.L. México, con mas de 20 años de experiencia en la reparación de computadoras, ya sean del tipo Laptop o Desktop" >
-    <link rel="stylesheet" href="style.css">
+    <title>Menu Responsive</title>
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
-        <figure class="logo"><a href="https://pcymac.com"><img src="images/logo.png" alt="logo"></a> </figure>
-        <nav>
-        <ul>
-            <li><a class="menu" href="https://pcymac.com">Inicio</a></li>
-            <li><a class="menu" href="#">Servicios</a></li>
-            <li><a class="menu" href="#">Productos</a></li>
-            <li><a class="menu" href="#">Contacto</a></li>
+    <nav class="nav">
+        <input type="checkbox" name="" id="nav__checkbox" class="nav__checkbox" />
+        <label for="nav__checkbox" class="nav__toggle">
+          <!-- SVG Menu -->
+          <svg class="menu" viewBox="0 0 448 512" width="100" title="bars">
+            <path
+              d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
+          </svg>
+      
+          <!-- SVG Close -->
+          <svg class="close" viewBox="0 0 384 512" width="100" title="times">
+            <path
+              d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
+          </svg>
+        </label>
+      
+        <ul class="nav__menu">
+          <li class="menu__logo">
+            <img src="images/logo1.png" alt="" />
+            <img src="images/logo2.png" alt="" />
+          </li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Productos</a></li>
+          <li><a href="#">Contacto</a></li>
         </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="parent">
-            <div class="box" id="one">
-                <figure>
-                    <img class="servicios-img" src="./images/reparacion_de_computadoras.webp">
-                </figure>
-            </div>
-            <div class="box" id="two">
-                <figure>
-                    <img class="servicios-img" src="./images/reparacion_de_laptops.jpg">
-                </figure>
-            </div>
-            <div class="box" id="three">
-                <figure>
-                    <img class="servicios-img" src="./images/pc_gamer.webp">
-                </figure>
-            </div>
-        </section>       
-    </main>
-    <footer>
-        <h1 class="redes">PCYMAC | Reparación de Computadoras</h1>
-        <p class="derechos">Teléfono: 8116653321</p>
-    </footer>
+      </nav>
+
+      
+      <main>
+        <section class="main-container-section">
+          <figure class="main-section__figure"><img src="./images/reparacion_de_computadoras.jpg" alt="Reparación de Computadoras">
+              <div class="container-figcaption">
+                <figcaption>
+                  Reparación de computadoras de escritorio (Desktop), ya sean de Gabinete (genéricas) o all in one (todo en uno).
+                </figcaption>
+              </div>
+          </figure>
+          <figure class="main-section__figure"><img src="./images/reparacion_de_laptops.jpg" alt="Reparación de Laptops">
+              <div class="container-figcaption">
+                <figcaption>
+                  Repación de Laptops de todas las marcas como HP, Dell, Apple, Acer, Gateway, Toshiba, también contamos con refacciones originales y genéricas.
+                </figcaption>
+              </div>
+          </figure>
+          <figure class="main-section__figure"><img src="./images/pc_gamer.jpg" alt="PC Gamers">
+              <div class="container-figcaption">
+                <figcaption>
+                  Venta, mantenimiento y reparación de equipos gamer, armamos tu equipo a tu medida y te asesoramos de que es lo que mejor se adapta a tus necesidades.
+                </figcaption>
+              </div>
+          </figure>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <t1>PCYMAC | Reparación de Computadoras  </t1>
+      </footer>
+    </body>
 </body>
+<!-- Messenger Plugin de chat Code -->
 <div id="fb-root"></div>
+
+<!-- Your Plugin de chat code -->
 <div id="fb-customer-chat" class="fb-customerchat">
 </div>
+
 <script>
   var chatbox = document.getElementById('fb-customer-chat');
   chatbox.setAttribute("page_id", "155877407839960");
   chatbox.setAttribute("attribution", "biz_inbox");
 </script>
+
+<!-- Your SDK code -->
 <script>
   window.fbAsyncInit = function() {
     FB.init({
@@ -61,6 +89,7 @@
       version          : 'v12.0'
     });
   };
+
   (function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
