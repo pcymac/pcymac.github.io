@@ -136,7 +136,7 @@
   /* MAIN SECTION */
 
   .main-container-section {
-    background-color: rgba(190, 146, 64, 0.452);
+    background-color: #6adbd9;
     background-size: 100%;
     width: 100%;
     min-height: 90vh;
@@ -146,7 +146,7 @@
   }
 
   .main-section__figure {
-    background-color: rgb(49, 49, 49);
+    background-color: #ab9e95;
     max-width: 400px;
     max-height: 500px;
     width: 90vw;
