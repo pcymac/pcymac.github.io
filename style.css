@@ -135,6 +135,16 @@
 
   /* MAIN SECTION */
 
+  .container-blog {
+    background-color: var(--white);
+    color: var(--primary);
+    font-size: 1.4rem;
+  }
+
+  .section-blog {    
+    margin: 0 2rem;
+  }
+
   .main-container-section {
     background-color: #ffffff;
     background-size: 100%;
@@ -166,6 +176,8 @@
     object-fit: cover;
   }
 
+ 
+
   .container-figcaption {
     padding: 20px;
     width: 100%;
@@ -176,6 +188,11 @@
 
   .main-section__figure figcaption {
     font-size: 1.5rem;
+  }
+
+  h3 {
+    color: red;
+    margin-top: 1rem;
   }
 
   /* FOOTER SECTION */
