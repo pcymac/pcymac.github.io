@@ -16,6 +16,66 @@
   </footer>
   <main>    
     <section>
+      <h2>Como cambiar el tema de grub en linux</h2>
+        <p>
+          Ctrl+Alt+T</br>
+
+          sudo add-apt-repository ppa:danielrichter2007/grub-customizer</br>
+
+          sudo apt-get update</br>
+
+          sudo apt-get install grub-customizer</br>
+
+          grub-customizer</br>
+
+          Para checar la versión:</br>
+
+          grub-customizer --version</br>
+          grub-customizer -v</br>
+
+          Si lo quieren desinstalar:</br>
+
+          sudo apt-get remove grub-customizer</br>
+
+          Si quieren borrar el repositorio:</br>
+
+          sudo rm /etc/apt/sources.list.d/danielrichter2007-ubuntu-grub-customizer-bionic.list</br>
+
+          Después para instalar un tema de GRUB:</br>
+
+          Descargan el theme, por ejemplo:</br>
+
+          https://www.gnome-look.org/p/1569525 </br>
+
+          Como yo lo descargue en Mozilla en Terminal te vas a:</br>
+
+          /Descargas/Nombre-del-Tema/ o en firefox te lo pone en la carpeta /tmp/mozilla_NOMBREDEUSUARIO</br>
+
+          /tmp/mozilla_iecgerman0</br>
+
+          german@PC-DELL:/tmp$ cd mozilla_german0/</br>
+          german@PC-DELL:/tmp/mozilla_german0$ ls</br>
+          'dedsec-grub-theme v2.zip'</br>
+          german@PC-DELL:/tmp/mozilla_german0$</br>
+
+          descomprimes el tema</br>
+
+          unzip dedsec-grub-theme\ v2.zip</br>
+
+          y copias o mueves la carpeta a:</br>
+
+          sudo cp -r /tmp/mozilla_german0/dedsec /boot/themes/dedsec</br>
+
+          verificamos que este el tema:</br>
+
+          german@PC-DELL:/boot/themes$ ls</br>
+          dedsec</br>
+          german@PC-DELL:/boot/themes$</br>
+
+          grub-customizer</br>
+
+          por último seleccionas el theme dedsec, le damos en salvar y reiniciamos</br>
+        </p><br><hr>
       <h2>Consejos para tener una buena seguridad informática:</h2><br>
         <p>
           Cambiar periódicamente tus passwords Wi-Fi y usar equipos que usen WPA3 sobre todo si hay mucha gente viviendo o trabajando alrededor.<br>
@@ -61,6 +121,12 @@
         <p>Con tus correos distribuidos en estas 3 cuentas, puedes tener mejor control de los correos que llegan, contener correos basura o spam, levantar alarmas en caso de la llegada de un correo fuera de lugar. También podrás tener seguridad de que si el correo Email Publico, es comprometido, no alcanzarán tus datos personales.</p><br>
   
         <p>Una manera de verificar si el enlace en un correo es del remitente que dice ser, es colocar el mouse (no hacer click) en el botón o link del enlace, en la mayoría de casos en alguna parte de la pantalla (en chrome parte baja izquierda) aparece un vistazo del dominio al que lleva.</p><br>
+        
+        <p>Hace poco Google sacó un test de phishing para saber qué tan propensos somos para caer en algo así.</p><br>
+
+        <p>Aquí les dejo el enlace: </p><br>
+          
+        <p><a href="https://phishingquiz.withgoogle.com/">https://phishingquiz.withgoogle.com/</a></p><br>
         <hr />
     </section>
   </main>
