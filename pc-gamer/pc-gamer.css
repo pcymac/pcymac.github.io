@@ -1,0 +1,149 @@
+.text {
+    background: black;
+    margin: 0;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://media.giphy.com/media/3o6Ztb45EYezY9x9gQ/giphy.gif);
+    background-size: contain;
+    background-position: top left;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+
+
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+  }
+  
+  :root {
+    --card-height: 70vh;
+    --card-width: calc(var(--card-height) / 1.1);
+  }
+  
+  
+  body {
+    min-height: 100vh;
+    background: #212534;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+  }
+  
+  img {
+    width: var(--card-width);
+    height: var(--card-height);
+    position: relative;
+  }
+  
+  .card {
+    background: #191c29;
+    width: var(--card-width);
+    height: var(--card-height);
+    padding: 3px;
+    position: relative;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-size: 1.5em;
+    color: rgb(88 199 250 / 0%);
+    cursor: pointer;
+    font-family: cursive;
+  }
+  
+  .card:hover {
+    color: rgb(88 199 250 / 100%);
+    transition: color 1s;
+  }
+  .card:hover:before, .card:hover:after {
+    animation:reverse;
+    opacity: 90%;
+  }
+  
+  
+  .card::before {
+    content: "";
+    width: 104%;
+    height: 102%;
+    border-radius: 8px;
+    background-image: linear-gradient(
+      var(--rotate)
+      , #5ddcff, #3c67e3 43%, #4e00c2);
+      position: absolute;
+      z-index: -1;
+      top: -1%;
+      left: -2%;
+      animation: spin 2.5s linear infinite;
+  }
+  
+  .card::after {
+    position: absolute;
+    content: "";
+    top: calc(var(--card-height) / 6);
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.8);
+    filter: blur(calc(var(--card-height) / 6));
+    background-image: linear-gradient(
+      var(--rotate)
+      , #5ddcff, #3c67e3 43%, #4e00c2);
+      opacity: 1;
+    transition: opacity .5s;
+    animation: spin 2.5s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+    100% {
+      --rotate: 360deg;
+    }
+  }
+  
+  /* a {
+    color: #212534;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: 2rem;
+  } */
+
+  .items {
+    margin-top: 10rem;
+    width: var(--card-width);
+    height: 50vh;
+    font-size: 1rem;
+    color: white;      
+    font-family: sans-serif;
+}
+
+  .items li {
+      list-style: none;
+      text-align: center;
+  }
+  @media only screen and (min-width: 700px) {
+    .text {
+      font-size: 5rem;
+    }
+    .items {
+      font-size: 2rem;
+    }    
+  }
