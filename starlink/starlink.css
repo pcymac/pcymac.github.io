@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+html {
+  background-color: #f1faff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* font-size: 62.5%; */
+}
+
+.container__cards {
+  max-width: 1280px;
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 390px;
+  margin: 10px;
+}
+
+.card .cover img {
+  width: 100%;
+  display: block;
+  margin: auto;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.card .description {
+  background: white;
+  margin-top: -10px;
+  padding: 20px;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.card .description h2 {
+  margin-top: 10px;
+}
+
+.card .description p {
+  margin-top: 10px;
+}
