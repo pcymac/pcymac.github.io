@@ -14,14 +14,21 @@ html {
 
 .container__cards {
     display: flex;
-    flex-wrap: flex;
-    justify-content: center;
+    flex-direction: column;
+    /* flex-wrap: flex; */
+    /* justify-content: center; */
+    align-items: center;
 }
-
-
-
 
 .card .cover video {
     width: 100%;
-    display: block;
 }
+
+.card .cover picture img {
+    width: 320px;   
+}
+
+.description {
+    width: 320px;
+}
+
