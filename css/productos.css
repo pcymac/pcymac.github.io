@@ -30,14 +30,15 @@
   }
 
   .nav .nav__menu li a {    
-    padding: 3rem;
+    padding: 2rem;
     color: white;
     text-decoration: none;
     cursor: pointer;
   }
 
   body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-family: 'Azeret Mono', monospace;
+      font-weight: 500;
   }
 
 
@@ -60,7 +61,7 @@
   }
 
   .main-section__figure figcaption {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   h3 {
@@ -93,7 +94,7 @@
             display: flex;
             flex-direction: column;
             list-style: none;
-            font-size: 1.4rem;
+            font-size: 1.6rem;
             background-color: #BA2C73;
             text-transform: uppercase;
             cursor: pointer;
@@ -126,6 +127,6 @@
       }
 
       .main-section__figure figcaption {
-            font-size: 1.5rem;
+            font-size: 2rem;
       }
 }
