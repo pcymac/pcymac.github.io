@@ -45,8 +45,10 @@
   /* MAIN SECTION */
 
   .main-container-section {
-      background: rgb(162,215,41);
-      background: linear-gradient(142deg, rgba(162,215,41,1) 0%, rgba(129,215,41,1) 40%, rgba(41,215,97,0.576417387201545) 100%);
+      /* background: rgb(162,215,41);
+      background: linear-gradient(142deg, rgba(162,215,41,1) 0%, rgba(129,215,41,1) 40%, rgba(41,215,97,0.576417387201545) 100%); */
+      background: rgb(115,212,126);
+background: linear-gradient(142deg, rgba(115,212,126,1) 0%, rgba(152,212,115,1) 40%, rgba(152,212,115,0.7028218815835674) 100%);
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
       padding: 2rem;
