@@ -47,13 +47,14 @@ header nav a:hover, header nav a.activo {
       font-size: 16px;
       min-height: 40.62em; /* AQUI DIVIDIO 650PX ENTRE 16PX */
       color: #fff;
-      background: linear-gradient(rgba(0,0,0,.50) 0%, rgba(0,0,0,.50) 100%), url(../imagenes/portadas/candy.jpg);
+      background: linear-gradient(rgba(0,0,0,.50) 0%, rgba(0,0,0,.50) 100%), url(../imagenes/portadas/kevin.jpg);
       background-position: center center;
       background-size: cover;
       margin-bottom: 3.12em;
       display: flex;
       align-items: end;
 }
+
 .pelicula-principal .contenedor {
       margin: 0 auto;
       margin-bottom: 6.25em; /*Aquí dividio 100px / 16px que es el tamaño de la letra que esta usando*/
