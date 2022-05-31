@@ -12,11 +12,27 @@ header {
 }
 .cab_nav {
       width: 100%;
-      padding: 20px;
-      text-align: right;
+      padding: 10px;
+      text-align: center;
       position: fixed;
       top: 0px;
 }
+
+.cab_nav ul li {
+      list-style: none;
+      display: inline-block;
+      padding: 10px 50px;
+      color: white;
+      font-size: 20px;
+      font-family: sans-serif;
+      cursor: pointer;
+}
+
+.cab_nav ul li a {
+      text-decoration: none;
+      color: white;
+}
+
 .nomb_logo {
       width: 330px;
       padding: 0px 20px;
@@ -134,7 +150,7 @@ header {
       background-color: rgba(0, 0, 0, 0.6);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
       
       * {
             padding: 0px;
@@ -155,7 +171,36 @@ header {
             position: fixed;
             top: 0px;
       }
+
+      .cab_nav .nav_menu {
+            display: flex;
+            width: 100%;
+      }
+
+      .cab_nav ul li {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            text-alig: center;
+            justify-content: center;
+            padding: 1rem 0rem;
+            color: white;
+            font-size: 20px;
+            font-family: sans-serif;
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.6);
+            letter-spacing: 10px;
+            
+            text-transform: uppercase;
+      }
+      
+      .cab_nav ul li a {
+            text-decoration: none;
+            color: white;
+      }
+
       .nomb_logo {
+            display: none;
             width: 330px;
             padding: 0px 0px;
             float: left;
@@ -166,6 +211,7 @@ header {
             font-size: 20px;
       }
       .logo_img {
+            display: none;
             width: 200px;
             position: relative;
             float: left;
@@ -254,16 +300,18 @@ header {
       display: none;
       }
       
-      .foot {
-            background-color: rgba(0, 0, 0, 0.6);
-            margin-top: 0%;
+      body .foot {
+            background-color: yellow;
             width: 100%;
-            padding: 20px 0px;
-            position: relative;
+            height: auto;
       }
-      .foot_p {
-            color: #fff;
-            text-align: justify;
+      
+      body .foot .foot_p {
+            color: red;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 1rem;
+            font-weight:bolder;
       }
     
 }

@@ -17,7 +17,7 @@
     height: 9rem;
     font-size: 1.8rem;
     background-color: #BA2C73;
-    text-transform: uppercase;
+    text-transform: uppercase; 
   }
 
   .nav .nav__menu li a {
