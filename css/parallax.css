@@ -7,7 +7,7 @@
 header {
       width: 100%;
       height: 80px;
-      background-color: rgba(0, 0, 0, 0.4);
+      background-color: rgba(0, 0, 0, 0.9);
       position: fixed;
 }
 .cab_nav {
@@ -21,11 +21,12 @@ header {
 .cab_nav ul li {
       list-style: none;
       display: inline-block;
-      padding: 10px 50px;
+      padding: 10px 20px;
       color: white;
       font-size: 20px;
       font-family: sans-serif;
       cursor: pointer;
+      text-transform: uppercase;
 }
 
 .cab_nav ul li a {
@@ -34,12 +35,12 @@ header {
 }
 
 .nomb_logo {
-      width: 330px;
+      width: auto;
       padding: 0px 20px;
       float: right;
       position: relative;
       top: 5%;
-      left: 2%;
+      /* left: 2%; */
       color: #fff;
       font-size: 30px;
 }
@@ -49,6 +50,30 @@ header {
       float: left;
       transform: translateY(-20px);
 }
+
+/*******************************/
+/*                             */
+/*        MAIN CONTAINER       */
+/*                             */
+/*******************************/
+
+/* .main__container {
+      width: 100%;
+      overflow: hidden;
+} */
+
+/*******************************/
+/*                             */
+/*        VIDEO BANNER         */
+/*                             */
+/*******************************/
+
+.video__banner {
+      width: 100%;
+      margin-bottom: -5px;
+      margin-top: 80px;
+}
+
 .fondo_p {
       width: 100%;
       height: 100vh;
@@ -60,22 +85,22 @@ header {
       justify-content: center;
       align-items: center;
 }
-.fondo_p h1 {
+.fondo_p h2 {
       font-size: 60px;
       color: #fff;
 }
 .seccion_f {
-      max-width: 1100px;
-      width: 90%;
+      width: 100%;
       overflow: hidden;
       margin: auto;
-      color: #fff;
-      padding: 20px 0px;
+      color: #9eff99;
+      padding: 80px 0px;
+      background-color: #131313;
 }
 .seccion {
       background: url(../imagenes/mtto_a_lap.jpg);
       width: 100%;
-      height: 130vh;
+      height: 100vh;
       background-position: center;
       position: center;
       background-size: cover;
@@ -93,20 +118,24 @@ header {
 .titulos {
       font-size: 35px;
       text-align: center;
-      padding: 60px 0px;
+      color: #6892d2;
 }
 .parrafos {
       font-size: 20px;
       padding: 20px;
       text-align: justify;
+      max-width: 1366px;
+      margin: 0 auto;
 }
+
+
 
 /* REPLICAS DE SECCIONES */
 
 .seccion_2 {
       background: url(../imagenes/kit_de_iot.jpg);
       width: 100%;
-      height: 130vh;
+      height: 100vh;
       background-position: center;
       position: center;
       background-size: cover;
@@ -118,7 +147,7 @@ header {
 .seccion_3 {
       background: url(../imagenes/formateo_de_mac.jpg);
       width: 100%;
-      height: 130vh;
+      height: 100vh;
       background-position: center;
       position: center;
       background-size: cover;
@@ -126,7 +155,8 @@ header {
       justify-content: center;
       align-items: center;
 }
-.video {
+
+/* .video {
       position:fixed;
       min-width: 100%;
       min-height: 100%;
@@ -134,21 +164,31 @@ header {
       left: 50%;
       transform: translateY(-50%) translateX(-50%);
       z-index: -1;
-} 
-.foot {
-      background-color: rgba(0, 0, 0, 0.6);
-      margin-top: 0%;
-      width: 100%;
-      padding: 20px 0px;
-      position: relative;
-}
-.foot_p {
-      color: #fff;
-      text-align: center;
-}
+} */
+
 .marca{
       background-color: rgba(0, 0, 0, 0.6);
 }
+
+.foot {
+      background-color: yellow;
+      width: 100%;
+      height: auto;
+}
+
+.foot_p {
+      color: red;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      font-weight:bolder;
+}
+
+/*******************************/
+/*                             */
+/*     PANTALLA CELULARES      */
+/*                             */
+/*******************************/
 
 @media only screen and (max-width: 1024px) {
       
@@ -170,6 +210,7 @@ header {
             text-align: left;
             position: fixed;
             top: 0px;
+            background-color: rgba(0, 0, 0, 0.9);
       }
 
       .cab_nav .nav_menu {
@@ -181,11 +222,11 @@ header {
             list-style: none;
             display: flex;
             flex-wrap: wrap;
-            text-alig: center;
+            text-align: center;
             justify-content: center;
             padding: 1rem 0rem;
             color: white;
-            font-size: 20px;
+            /* font-size: 20px; */
             font-family: sans-serif;
             cursor: pointer;
             background-color: rgba(0, 0, 0, 0.6);
@@ -199,6 +240,7 @@ header {
             color: white;
       }
 
+      
       .nomb_logo {
             display: none;
             width: 330px;
@@ -217,37 +259,42 @@ header {
             float: left;
             transform: translateY(-20px);
       }
+
+      .video__banner {
+            display: none;
+      }
+
       .fondo_p {
             width: 100%;
-            height: 100vh;
+            height: 50vh;
             background: url(../imagenes/celular/cel-laptop.jpg);
             background-position: center;
-            background-size:cover;
+            /* background-size:cover; */
             background-attachment: fixed;
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-top: 315px;
       }
-      .fondo_p h1 {
+      .fondo_p h2 {
             font-size: 20px;
             color: #fff;
       }
       .seccion_f {
-            max-width: 600px;
             width: 100%;
             overflow: hidden;
             margin: 0px;
-            color: #fff;
+            color: #9eff99;
             padding: 0px 0px;
             background-color: #2a2a2a;
       }
       .seccion {
             background: url(../imagenes/celular/cel-mtto.jpg);
             width: 100%;
-            height: 130vh;
+            height: 50vh;
             background-position: center;
             position: center;
-            background-size: cover;
+            /* background-size: cover; */
             background-attachment: fixed;
             justify-content: center;
             align-items: center;
@@ -255,19 +302,20 @@ header {
       .seccion h2, .seccion_2 h2, .seccion_3 h2 {
             font-size: 20px;
             text-align: center;
-            padding: 400px 0px;
+            padding: 200px 0px;
             color: #fff;
       }
       
       .titulos {
             font-size: 15px;
             text-align: center;
-            padding: 60px 0px;
+            padding: 40px 0px;
       }
       .parrafos {
             font-size: 12px;
             padding: 20px;
             text-align: justify;
+            margin-bottom: 30px;
       }
       
       /* REPLICAS DE SECCIONES */
@@ -275,10 +323,10 @@ header {
       .seccion_2 {
             background: url(../imagenes/celular/cel-casa-inteligente.jpg);
             width: 100%;
-            height: 130vh;
+            height: 50vh;
             background-position: center;
             position: center;
-            background-size: cover;
+            /* background-size: cover; */
             background-attachment: fixed;
             justify-content: center;
             align-items: center;
@@ -287,7 +335,7 @@ header {
       .seccion_3 {
             background: url(../imagenes/celular/cel-mac.jpg);
             width: 100%;
-            height: 130vh;
+            height: 50vh;
             background-position: center;
             position: center;
             background-size: cover;
@@ -296,9 +344,7 @@ header {
             align-items: center;
       }
 
-      .video {
-      display: none;
-      }
+      
       
       body .foot {
             background-color: yellow;
